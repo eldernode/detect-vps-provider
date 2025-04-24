@@ -1,14 +1,20 @@
 # 🔍 Detect VPS Provider – by Eldernode
 
-A simple and fast Bash script that detects:
-- Your public IP
-- Your current VPS provider
-- Your datacenter location
-- The virtualization type (KVM, OpenVZ, etc.)
+A powerful Bash script to detect:
+- Your public IP address
+- The current VPS hosting provider
+- Server location details
+- Reverse DNS record
+- Whether your server may be from a reseller
 
-## 🚀 Why use it?
 
-Whether you're renting a VPS from an unknown host or just curious about what lies behind your server — this tool gives you answers in seconds.
+
+## 🚀 Why use this?
+
+Get transparency about where your VPS is really hosted.  
+Useful for developers, system administrators, and security-conscious users.
+
+
 
 ## 🧰 Usage
 
@@ -21,7 +27,7 @@ chmod +x detect-vps.sh
 
 
 ## 🛡️ No installation. No dependencies.
-Just pure Bash + `curl`.
+Just pure Bash + curl, dig (DNS), and whois.
 
 
 
@@ -29,15 +35,14 @@ Just pure Bash + `curl`.
 ## ✅ Sample Output
 
 ```
-🔍 Detecting your VPS provider...
-
-📡 IP Address: 88.198.10.20
-🏢 VPS Provider: Hetzner Online GmbH
+✅ IP Address: 88.198.10.20
 🌍 Location: Nuremberg, Bavaria, DE
-🖥️ Virtualization: kvm
+🏢 Organization: Hetzner Online GmbH
+📡 Reverse DNS: your-server.de
+⚠️ Status: Possible reseller or generic VPS hostname
 
-💡 Looking for better performance and support?
-🔥 Try [ Eldernode VPS ] 👉 https://eldernode.com
+👉 Looking for verified VPS from real datacenter?
+🔗 Visit: https://eldernode.com/vps/
 ```
 
 
